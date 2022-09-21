@@ -1,0 +1,80 @@
+//Create a package. Under this package, create a class named stock
+package stock;
+
+public class stocks {
+  private String Admin;
+  private String Supplier;
+private int No;
+    private int Stock;
+private int Purchase;
+private int Sold;
+public int Bal;
+
+public String getadmin(){
+    return Admin;
+}
+public void setadmin(String Admin){
+    this.Admin=Admin;
+}
+public String getsupplier(){
+    return Supplier;
+}
+public void setsupplier(String Supplier){
+   this.Supplier=Supplier;
+}
+public int getno(){
+    return No;
+}
+public void setno(int No){
+    this.No=No;
+}
+public int getstock(){
+    return Stock;
+}
+public void setstock(int Stock){
+   this.Stock=Stock;
+}
+public int getpurchase(){
+    return Purchase;
+}
+public void setpurchase(int Purchase){
+   this.Purchase=Purchase;
+}
+public int getsold(){
+    return Sold;
+}
+public void setsold(int Sold){
+   this.Sold=Sold;
+}
+}
+
+//Create another package.Under this package create a class named shop
+package test;
+
+import stock.stocks;
+public class shop {
+  public static void main (String args[]){
+      stocks s=new stocks();
+      s.setadmin("AJ medicals");
+      s.setsupplier("Sane");
+      s.setno(900548725);
+      s.setstock(1500);
+      s.setpurchase(500);
+      s.setsold(250);
+      System.out.println("Administrator: "+s.getadmin());
+      System.out.println("Distributor: "+s.getsupplier());
+      System.out.println("Contact No: "+s.getno());
+      System.out.println("Total stock amount: "+s.getstock());
+      System.out.println("Purchased amount: "+s.getpurchase());
+      System.out.println("Sold: "+s.getsold());
+  }  
+}
+
+//OUT OF THE CODE
+
+Administrator: AJ medicals
+Distributor: Sane
+Contact No: 900548725
+Total stock amount: 1500
+Purchased amount: 500
+Sold: 250
